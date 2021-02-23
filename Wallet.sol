@@ -28,7 +28,7 @@ contract Wallet {
         for(uint i=0; i<owners.length;i++){
             if(owners[i] == msg.sender){
                 owner = true;
-                // break;
+                break;
             }
         }
         require(owner == true);
